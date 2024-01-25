@@ -2,6 +2,11 @@
 A string is good if there are no repeated characters.
 
 Given a string s​​​​​, return the number of good substrings of length three in s​​​​​​.
+
+Time Complexity: O(n) - where n is the length of the string s, 
+                        we go through each letter of the s only once
+Space Complexity: O(1) - we store at most 3 characters in the char_freq_map and it does not increase
+                         with respect to the input size
 '''
 
 
