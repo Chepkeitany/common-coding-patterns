@@ -2,6 +2,12 @@
 Given two strings s and t of lengths m and n respectively, return the minimum window substring
 of s such that every character in t (including duplicates) is included in the window.
 If there is no such substring, return the empty string ""
+
+Time Complexity: O(n + m) where n and m are the lengths of the strings s and t respectively.
+                 We go through all the characters of string t to build the char_freq_map
+                 then we go through each character in string s and add it to the window
+Space Complexity: O(m) where m is the length of string t. We store characters of t in a hashmap
+                  In the worst case, all the characters in t are distinct
 '''
 
 
