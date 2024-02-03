@@ -5,6 +5,7 @@ determine if a person could attend all meetings.
 
 
 def can_attend_all_meetings(intervals):
+    '''Determing if an employee can attend all meetings'''
     # Sort the array by start time
     intervals.sort(key=lambda x: x[0])
     for i in range(1, len(intervals)):
